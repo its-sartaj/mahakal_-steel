@@ -1,3 +1,4 @@
+import { asset } from '../utils/assets';
 export interface ProductSpecification {
   label: string;
   value: string;
@@ -56,7 +57,7 @@ export const COMPANY_INFO = {
   email: 'sales@mahakalsteel.in',
   workingHours: 'Monday - Saturday: 9:00 AM – 7:00 PM (Closed on Sunday)',
   tagline: 'Quality Steel. Trusted Service.',
-  heroImage: '/assets/images/hero_steel_warehouse_1793271819088.jpg',
+  heroImage: asset('/assets/images/hero_steel_warehouse_1793271819088.jpg'),
   googleMapsEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.021577749007!2d72.88566977508933!3d19.10668998210359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c870a48a9775%3A0x6331d5b3d68ad413!2sSakinaka%2C%20Mumbai%2C%20Maharashtra%20400072!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin',
   googleMapsDirectionsUrl: 'https://maps.google.com/?q=Sakinaka,+Link+Road,+Mumbai+400072',
   developerCredit: 'Designed, Developed By Sajid Web Solutions',
@@ -68,8 +69,8 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     name: 'Steel Sheets & Plates',
     headline: 'Hot Rolled, Cold Rolled & Chequered Steel Plates',
     description: 'Precision-sheared, flat, and uniform steel sheets and heavy plates suitable for industrial fabrication, storage tanks, and construction.',
-    heroImage: '/assets/images/steel_sheets_plates_1793271793920.jpg',
-    cardImage: '/assets/images/steel_sheets_plates_1793271793920.jpg',
+    heroImage: asset('/assets/images/steel_sheets_plates_1793271793920.jpg'),
+    cardImage: asset('/assets/images/steel_sheets_plates_1793271793920.jpg'),
     overview: 'Mahakal Steel offers an extensive inventory of Prime Hot Rolled (HR) and Cold Rolled (CR) plates, tear-drop anti-skid chequered plates, and custom sheared sheets directly sourced to maintain structural integrity across heavy manufacturing and civil projects.',
     commonGrades: ['IS 2062 E250 / E350', 'ASTM A36', 'SAIL Hard', 'IS 513 CR'],
     standardShapes: ['Flat Sheets', 'Heavy Base Plates', 'Chequered Plates', 'Cut-to-Length Strips'],
@@ -84,9 +85,9 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         shortDescription: 'Industrial grade hot rolled steel plates adhering to IS 2062 and ASTM specifications, suitable for pressure vessels, machinery bases, and structural framing.',
         fullDescription: 'Our Hot Rolled (HR) Steel Plates are manufactured through hot continuous rolling processes, yielding exceptional yield strength, consistent thickness, and superior weldability. We stock a comprehensive thickness spectrum from 3 mm to 80 mm in standard and custom sheared sizes at our Sakinaka yard. Each batch comes with standard test reports ensuring reliable material performance.',
         images: [
-          '/assets/images/steel_sheets_plates_1793271793920.jpg',
-          '/assets/images/hero_steel_warehouse_1793271819088.jpg',
-          '/assets/images/mild_steel_bars_1793271818875.jpg'
+          asset('/assets/images/steel_sheets_plates_1793271793920.jpg'),
+          asset('/assets/images/hero_steel_warehouse_1793271819088.jpg'),
+          asset('/assets/images/mild_steel_bars_1793271818875.jpg')
         ],
         specifications: [
           { label: 'Standard Compliance', value: 'IS 2062 Grade E250 / E350, ASTM A36' },
@@ -120,9 +121,9 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         shortDescription: 'Prime cold rolled steel sheets with smooth surface textures, ideal for automotive panels, electrical cabinets, and precision fabrication.',
         fullDescription: 'Cold Rolled (CR) steel sheets are processed below re-crystallization temperature to deliver a silky smooth, scale-free surface and exact thickness control. Sourced for precision sheet metal workers and enclosure builders across Mumbai, our CR materials offer predictable ductility for deep drawing, stamping, and electrostatic powder coating.',
         images: [
-          '/assets/images/stainless_steel_coils_1793271795436.jpg',
-          '/assets/images/steel_sheets_plates_1793271793920.jpg',
-          '/assets/images/hero_steel_warehouse_1793271819088.jpg'
+          asset('/assets/images/stainless_steel_coils_1793271795436.jpg'),
+          asset('/assets/images/steel_sheets_plates_1793271793920.jpg'),
+          asset('/assets/images/hero_steel_warehouse_1793271819088.jpg')
         ],
         specifications: [
           { label: 'Standard Compliance', value: 'IS 513 / JIS G3141 SPCC / ASTM A1008' },
@@ -156,9 +157,9 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         shortDescription: 'Tear-drop patterned chequered plates designed to maximize pedestrian and vehicular grip in industrial stairways, ramps, and vehicle beds.',
         fullDescription: 'Our Chequered Steel Plates feature distinct raised tear-drop diamond patterns that offer exceptional friction and skid resistance even in oily or wet operating conditions. Built with high-strength structural grade mild steel, these plates resist heavy dynamic loads, pedestrian footfall, and forklift wheel stresses.',
         images: [
-          '/assets/images/steel_sheets_plates_1793271793920.jpg',
-          '/assets/images/mild_steel_bars_1793271818875.jpg',
-          '/assets/images/hero_steel_warehouse_1793271819088.jpg'
+          asset('/assets/images/steel_sheets_plates_1793271793920.jpg'),
+          asset('/assets/images/mild_steel_bars_1793271818875.jpg'),
+          asset('/assets/images/hero_steel_warehouse_1793271819088.jpg')
         ],
         specifications: [
           { label: 'Standard Compliance', value: 'IS 3502 / IS 2062 Grade E250' },
@@ -189,8 +190,8 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     name: 'Steel Pipes & Tubes',
     headline: 'Seamless, ERW & Hollow Structural Steel Tubing',
     description: 'Comprehensive inventory of carbon steel seamless pipes, ERW conduits, and hollow structural square/rectangular tubes for fluid transfer and structural frameworks.',
-    heroImage: '/assets/images/steel_pipes_tubes_1793271794975.jpg',
-    cardImage: '/assets/images/steel_pipes_tubes_1793271794975.jpg',
+    heroImage: asset('/assets/images/steel_pipes_tubes_1793271794975.jpg'),
+    cardImage: asset('/assets/images/steel_pipes_tubes_1793271794975.jpg'),
     overview: 'Mahakal Steel maintains a dependable supply of round, square, and rectangular structural pipes. From heavy wall ASTM A106 Grade B seamless pipes engineered for high pressure steam and oil pipelines to ERW structural hollow sections for modern pre-engineered building frameworks.',
     commonGrades: ['ASTM A106 Gr. B', 'API 5L Gr. B', 'IS 1239 / IS 3589', 'IS 4923 YSt 210/310'],
     standardShapes: ['Round Seamless', 'ERW Round Pipes', 'Square Hollow Sections (SHS)', 'Rectangular Hollow Sections (RHS)'],
@@ -205,9 +206,9 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         shortDescription: 'Solid pierced seamless carbon steel pipes engineered for high pressure steam, oil, natural gas, and chemical pipeline applications.',
         fullDescription: 'Manufactured without welded seams, our seamless carbon steel pipes exhibit uniform circumferential wall thickness and high bursting resistance under severe pressures and elevated temperatures. Stocked in Schedule 40, Schedule 80, and Schedule 160 across nominal bore sizes.',
         images: [
-          '/assets/images/steel_pipes_tubes_1793271794975.jpg',
-          '/assets/images/hero_steel_warehouse_1793271819088.jpg',
-          '/assets/images/mild_steel_bars_1793271818875.jpg'
+          asset('/assets/images/steel_pipes_tubes_1793271794975.jpg'),
+          asset('/assets/images/hero_steel_warehouse_1793271819088.jpg'),
+          asset('/assets/images/mild_steel_bars_1793271818875.jpg')
         ],
         specifications: [
           { label: 'Standard Compliance', value: 'ASTM A106 Gr. B / ASTM A53 / API 5L Gr. B' },
@@ -241,9 +242,9 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         shortDescription: 'Cold-formed electric resistance welded hollow sections offering high strength-to-weight ratios for modern architectural columns and trusses.',
         fullDescription: 'Electric Resistance Welded (ERW) hollow structural sections deliver outstanding aesthetic lines combined with multi-axial structural strength. Preferred by structural engineers for sports stadiums, airport terminals, industrial factory sheds, and heavy equipment chassis.',
         images: [
-          '/assets/images/steel_pipes_tubes_1793271794975.jpg',
-          '/assets/images/structural_steel_beams_1793271796654.jpg',
-          '/assets/images/mild_steel_bars_1793271818875.jpg'
+          asset('/assets/images/steel_pipes_tubes_1793271794975.jpg'),
+          asset('/assets/images/structural_steel_beams_1793271796654.jpg'),
+          asset('/assets/images/mild_steel_bars_1793271818875.jpg')
         ],
         specifications: [
           { label: 'Standard Compliance', value: 'IS 4923 / EN 10219 / ASTM A500' },
@@ -277,9 +278,9 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         shortDescription: 'Durable hot-dip galvanized steel pipes offering long-term atmospheric and moisture corrosion resistance.',
         fullDescription: 'GI Pipes are immersed in molten zinc to form a protective metallurgically bonded barrier against rust, moisture, and soil chemicals. Extensively supplied for municipal water pipelines, industrial cooling towers, outdoor scaffolding, and boundary fencing throughout Maharashtra.',
         images: [
-          '/assets/images/steel_pipes_tubes_1793271794975.jpg',
-          '/assets/images/hero_steel_warehouse_1793271819088.jpg',
-          '/assets/images/mild_steel_bars_1793271818875.jpg'
+          asset('/assets/images/steel_pipes_tubes_1793271794975.jpg'),
+          asset('/assets/images/hero_steel_warehouse_1793271819088.jpg'),
+          asset('/assets/images/mild_steel_bars_1793271818875.jpg')
         ],
         specifications: [
           { label: 'Standard Compliance', value: 'IS 1239 (Part 1) / IS 3589 / BS 1387' },
@@ -310,8 +311,8 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     name: 'Mild Steel Products',
     headline: 'Structural Angles, Channels, Flat Bars & Round Rods',
     description: 'Core mild steel commercial and structural sections for general fabrication, machinery parts, grillwork, and construction framing.',
-    heroImage: '/assets/images/mild_steel_bars_1793271818875.jpg',
-    cardImage: '/assets/images/mild_steel_bars_1793271818875.jpg',
+    heroImage: asset('/assets/images/mild_steel_bars_1793271818875.jpg'),
+    cardImage: asset('/assets/images/mild_steel_bars_1793271818875.jpg'),
     overview: 'Mild Steel forms the backbone of Mumbai’s fabrication and construction workshops. Mahakal Steel stocks ready-to-deliver Mild Steel Angles, Channels, Flat bars, and solid Round rods in prime tested grades.',
     commonGrades: ['IS 2062 Grade E250 A/BR', 'SAIL / TATA / RINL / Primary Mills Quality'],
     standardShapes: ['Equal & Unequal Angles', 'Standard Channels (ISMC)', 'Solid Flat Bars', 'Smooth Round Rods'],
@@ -326,9 +327,9 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         shortDescription: 'Hot rolled mild steel equal angles conforming to IS 2062 for building frames, transmission towers, and industrial brackets.',
         fullDescription: 'Our MS Equal Angles feature precise 90-degree internal and external radius fillets for optimal structural load transfer. Readily fabricated, punched, and welded, these angles are used across residential construction, commercial PEB bracing, and machinery base framing.',
         images: [
-          '/assets/images/mild_steel_bars_1793271818875.jpg',
-          '/assets/images/structural_steel_beams_1793271796654.jpg',
-          '/assets/images/steel_sheets_plates_1793271793920.jpg'
+          asset('/assets/images/mild_steel_bars_1793271818875.jpg'),
+          asset('/assets/images/structural_steel_beams_1793271796654.jpg'),
+          asset('/assets/images/steel_sheets_plates_1793271793920.jpg')
         ],
         specifications: [
           { label: 'Standard Compliance', value: 'IS 2062 Grade E250 / IS 808' },
@@ -362,9 +363,9 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         shortDescription: 'Heavy-duty hot rolled C-channels engineered for superior bending resistance under vertical and lateral loads.',
         fullDescription: 'Mild Steel Channels (ISMC) provide high bending stiffness about their major axis, making them ideal for floor joists, wall purlins, equipment slides, and heavy vehicle chassis cross members.',
         images: [
-          '/assets/images/mild_steel_bars_1793271818875.jpg',
-          '/assets/images/structural_steel_beams_1793271796654.jpg',
-          '/assets/images/hero_steel_warehouse_1793271819088.jpg'
+          asset('/assets/images/mild_steel_bars_1793271818875.jpg'),
+          asset('/assets/images/structural_steel_beams_1793271796654.jpg'),
+          asset('/assets/images/hero_steel_warehouse_1793271819088.jpg')
         ],
         specifications: [
           { label: 'Standard Compliance', value: 'IS 2062 E250 / IS 808 (ISMC)' },
@@ -398,9 +399,9 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         shortDescription: 'Solid hot rolled mild steel flats and bright rounds used across machining, anchor bolts, shafts, and metal fabrication.',
         fullDescription: 'Our merchant bar collection includes smooth solid round bars and rectangular flat strips. Sourced from tested prime billets, these bars offer uniform grain structure for high-speed machining, threading, turning, and hot forging.',
         images: [
-          '/assets/images/mild_steel_bars_1793271818875.jpg',
-          '/assets/images/steel_sheets_plates_1793271793920.jpg',
-          '/assets/images/hero_steel_warehouse_1793271819088.jpg'
+          asset('/assets/images/mild_steel_bars_1793271818875.jpg'),
+          asset('/assets/images/steel_sheets_plates_1793271793920.jpg'),
+          asset('/assets/images/hero_steel_warehouse_1793271819088.jpg')
         ],
         specifications: [
           { label: 'Standard Compliance', value: 'IS 2062 Grade E250 / IS 1732' },
@@ -431,8 +432,8 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     name: 'Stainless Steel Products',
     headline: 'Corrosion-Resistant SS 304, 316 Sheets, Pipes & Coils',
     description: 'High-alloy stainless steel sheets, coils, tubes, and decorative profiles engineered for corrosive chemical environments, food processing, and architectural applications.',
-    heroImage: '/assets/images/stainless_steel_coils_1793271795436.jpg',
-    cardImage: '/assets/images/stainless_steel_coils_1793271795436.jpg',
+    heroImage: asset('/assets/images/stainless_steel_coils_1793271795436.jpg'),
+    cardImage: asset('/assets/images/stainless_steel_coils_1793271795436.jpg'),
     overview: 'Stainless steel provides unmatched resistance against pitting, crevice corrosion, and acid degradation. Mahakal Steel supplies austenitic SS 304, 304L, 316, and 316L grades in 2B mill finish, mirror, and hairline architectural textures.',
     commonGrades: ['AISI 304 / 304L', 'AISI 316 / 316L', 'AISI 310S', 'AISI 430'],
     standardShapes: ['2B Sheets & Slit Coils', 'Seamless & Welded Tubes', 'Hairline / Mirror Plates', 'Round Bars & Flanges'],
@@ -447,9 +448,9 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         shortDescription: 'Food-grade austenitic stainless steel sheets with superior corrosion resistance and formability for pharmaceuticals, kitchens, and chemical vats.',
         fullDescription: 'Grade 304 (18% Chromium, 8% Nickel) is the world’s most widely specified stainless steel. Mahakal Steel supplies certified Prime SS 304/304L sheets with low carbon content to prevent intergranular sensitization during welding.',
         images: [
-          '/assets/images/stainless_steel_coils_1793271795436.jpg',
-          '/assets/images/steel_sheets_plates_1793271793920.jpg',
-          '/assets/images/hero_steel_warehouse_1793271819088.jpg'
+          asset('/assets/images/stainless_steel_coils_1793271795436.jpg'),
+          asset('/assets/images/steel_sheets_plates_1793271793920.jpg'),
+          asset('/assets/images/hero_steel_warehouse_1793271819088.jpg')
         ],
         specifications: [
           { label: 'Standard Compliance', value: 'ASTM A240 / ASME SA240 / EN 10088-2' },
@@ -483,9 +484,9 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         shortDescription: 'Grade 316 stainless steel pipes with 2% molybdenum for exceptional resistance to chlorides, marine salt, and harsh acids.',
         fullDescription: 'Stainless Steel 316/316L contains an essential addition of 2-3% Molybdenum, granting remarkable resistance to pitting and crevice corrosion in chloride-rich atmospheres. Frequently deployed in coastal Mumbai engineering projects, offshore oil setups, and specialized chemical flow lines.',
         images: [
-          '/assets/images/stainless_steel_coils_1793271795436.jpg',
-          '/assets/images/steel_pipes_tubes_1793271794975.jpg',
-          '/assets/images/hero_steel_warehouse_1793271819088.jpg'
+          asset('/assets/images/stainless_steel_coils_1793271795436.jpg'),
+          asset('/assets/images/steel_pipes_tubes_1793271794975.jpg'),
+          asset('/assets/images/hero_steel_warehouse_1793271819088.jpg')
         ],
         specifications: [
           { label: 'Standard Compliance', value: 'ASTM A312 / ASTM A269 / ASME SA312' },
@@ -519,9 +520,9 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         shortDescription: 'Premium stainless steel surface finishes designed for modern commercial facades, elevators, hospitality interiors, and fixtures.',
         fullDescription: 'Our architectural grade stainless sheets undergo precision mechanical polishing and PVD color treatments to achieve mirror No. 8, hairline brushed, and titanium-gold finishes. Sourced by interior designers, corporate architects, and luxury elevator fabricators.',
         images: [
-          '/assets/images/stainless_steel_coils_1793271795436.jpg',
-          '/assets/images/steel_sheets_plates_1793271793920.jpg',
-          '/assets/images/hero_steel_warehouse_1793271819088.jpg'
+          asset('/assets/images/stainless_steel_coils_1793271795436.jpg'),
+          asset('/assets/images/steel_sheets_plates_1793271793920.jpg'),
+          asset('/assets/images/hero_steel_warehouse_1793271819088.jpg')
         ],
         specifications: [
           { label: 'Base Grades', value: 'AISI 304 / AISI 316' },
@@ -552,8 +553,8 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     name: 'Structural Steel Sections',
     headline: 'Heavy Beams, Columns, Angles & Industrial Sections',
     description: 'Heavy rolled I-Beams (ISMB), H-Beams, Universal Columns, and wide flange structural profiles for large-span infrastructure and pre-engineered buildings.',
-    heroImage: '/assets/images/structural_steel_beams_1793271796654.jpg',
-    cardImage: '/assets/images/structural_steel_beams_1793271796654.jpg',
+    heroImage: asset('/assets/images/structural_steel_beams_1793271796654.jpg'),
+    cardImage: asset('/assets/images/structural_steel_beams_1793271796654.jpg'),
     overview: 'Mahakal Steel is a premier supplier of heavy structural steel in Mumbai. We provide certified structural beams and columns capable of bearing high compressive and bending loads in industrial plants, multi-level warehouses, and civil infrastructure.',
     commonGrades: ['IS 2062 Grade E250 / E350', 'ASTM A992 / A572 Gr. 50', 'EN 10025 S355JR'],
     standardShapes: ['ISMB (Indian Standard Medium Beams)', 'ISHB (Heavy Beams)', 'Universal Columns (UC)', 'Wide Flange Beams (W-Beams)'],
@@ -568,9 +569,9 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         shortDescription: 'High strength Indian Standard Medium Beams (ISMB) engineered to carry heavy bending moments in commercial and industrial construction.',
         fullDescription: 'Indian Standard Medium Beams (ISMB) are hot-rolled with tapered flanges to maximize the section modulus about the major axis. Our stock covers standard sizes from ISMB 100 up to ISMB 600 in ready lengths, sourced from primary steel manufacturers with mill test verification.',
         images: [
-          '/assets/images/structural_steel_beams_1793271796654.jpg',
-          '/assets/images/hero_steel_warehouse_1793271819088.jpg',
-          '/assets/images/mild_steel_bars_1793271818875.jpg'
+          asset('/assets/images/structural_steel_beams_1793271796654.jpg'),
+          asset('/assets/images/hero_steel_warehouse_1793271819088.jpg'),
+          asset('/assets/images/mild_steel_bars_1793271818875.jpg')
         ],
         specifications: [
           { label: 'Standard Compliance', value: 'IS 2062 Grade E250 / IS 808' },
@@ -604,9 +605,9 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         shortDescription: 'Parallel flange H-beams and Universal Columns delivering equal bending strength along major and minor axes for high-rise frames.',
         fullDescription: 'Unlike conventional tapered I-beams, H-Beams (ISHB / Universal Columns) feature wide, parallel flanges of uniform thickness. This geometry provides balanced moments of inertia, dramatically increasing column buckling capacity and simplifying bolted beam-to-column connections.',
         images: [
-          '/assets/images/structural_steel_beams_1793271796654.jpg',
-          '/assets/images/hero_steel_warehouse_1793271819088.jpg',
-          '/assets/images/steel_pipes_tubes_1793271794975.jpg'
+          asset('/assets/images/structural_steel_beams_1793271796654.jpg'),
+          asset('/assets/images/hero_steel_warehouse_1793271819088.jpg'),
+          asset('/assets/images/steel_pipes_tubes_1793271794975.jpg')
         ],
         specifications: [
           { label: 'Standard Compliance', value: 'IS 2062 E250/E350 / IS 12778 / ASTM A992' },
@@ -640,9 +641,9 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         shortDescription: 'Heavy-section channels and large-profile structural angles tailored for industrial heavy-duty fabrication and civil engineering.',
         fullDescription: 'When standard commercial merchant bars are insufficient for heavy cyclic loads, our heavy structural angles and channels step in. Specifically manufactured with thick webs and reinforced flanges to endure severe stress in dynamic mechanical systems and civil earth retention systems.',
         images: [
-          '/assets/images/structural_steel_beams_1793271796654.jpg',
-          '/assets/images/mild_steel_bars_1793271818875.jpg',
-          '/assets/images/steel_sheets_plates_1793271793920.jpg'
+          asset('/assets/images/structural_steel_beams_1793271796654.jpg'),
+          asset('/assets/images/mild_steel_bars_1793271818875.jpg'),
+          asset('/assets/images/steel_sheets_plates_1793271793920.jpg')
         ],
         specifications: [
           { label: 'Standard Compliance', value: 'IS 2062 Grade E250 / E350' },

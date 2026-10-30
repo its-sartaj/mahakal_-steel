@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Mail, ChevronDown } from 'lucide-react';
 import { COMPANY_INFO, PRODUCT_CATEGORIES } from '../data/steelData';
+import { asset } from '../utils/assets';
 
 export const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -67,7 +68,7 @@ export const Navbar: React.FC = () => {
             className="flex items-center shrink-0 py-1 mr-2 sm:mr-4 lg:mr-6 group select-none"
           >
             <img
-              src="/assets/logo.png"
+              src={asset('/assets/logo.png')}
               alt="Mahakal Steel"
               className="h-10 xs:h-11 sm:h-13 md:h-14 lg:h-15 xl:h-16 w-auto max-w-[180px] xs:max-w-[210px] sm:max-w-[250px] md:max-w-none object-contain transition-transform duration-200 group-hover:scale-[1.02]"
             />

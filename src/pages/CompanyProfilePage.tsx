@@ -1,3 +1,4 @@
+import { asset } from '../utils/assets';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Truck, Warehouse, CheckCircle2, ArrowRight } from 'lucide-react';
@@ -155,7 +156,7 @@ export const CompanyProfilePage: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="rounded-xl overflow-hidden border border-[#E3E6ED]">
           <img
-            src="/assets/images/structural_steel_beams_1793271796654.jpg"
+            src={asset("/assets/images/structural_steel_beams_1793271796654.jpg")}
             alt="Structural Steel Stock"
             className="w-full h-64 object-cover"
             referrerPolicy="no-referrer"
@@ -168,7 +169,7 @@ export const CompanyProfilePage: React.FC = () => {
 
         <div className="rounded-xl overflow-hidden border border-[#E3E6ED]">
           <img
-            src="/assets/images/steel_pipes_tubes_1793271794975.jpg"
+            src={asset("/assets/images/steel_pipes_tubes_1793271794975.jpg")}
             alt="Steel Pipes and Tubes"
             className="w-full h-64 object-cover"
             referrerPolicy="no-referrer"

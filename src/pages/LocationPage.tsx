@@ -1,3 +1,4 @@
+import { asset } from '../utils/assets';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Navigation, Clock, Phone, Mail, Compass, ExternalLink, Truck } from 'lucide-react';
@@ -93,7 +94,7 @@ export const LocationPage: React.FC = () => {
             </div>
             <div className="rounded-lg overflow-hidden border border-gray-200 shadow-xs bg-slate-900">
               <img
-                src="/assets/mahakal-signboard.jpeg"
+                src={asset("/assets/mahakal-signboard.jpeg")}
                 alt="Mahakal Steel Official Signboard Gala No 10 Bunavad Market Sakinaka Mumbai GST 27DLSPR1147D1ZU"
                 className="w-full h-auto object-cover hover:scale-102 transition-transform duration-300"
                 loading="lazy"

@@ -1,3 +1,4 @@
+import { asset } from '../utils/assets';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, MapPin, CheckCircle2, ArrowRight, Award, Compass, Warehouse, Truck } from 'lucide-react';
@@ -185,7 +186,7 @@ export const AboutPage: React.FC = () => {
             </h4>
             <div className="rounded-lg overflow-hidden border border-gray-200">
               <img
-                src="/assets/images/hero_steel_warehouse_1793271819088.jpg"
+                src={asset("/assets/images/hero_steel_warehouse_1793271819088.jpg")}
                 alt="Mahakal Steel Material Storage & Handling"
                 className="w-full h-56 object-cover"
                 referrerPolicy="no-referrer"

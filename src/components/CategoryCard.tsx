@@ -1,3 +1,4 @@
+import { asset } from '../utils/assets';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
@@ -12,7 +13,7 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({ category }) => {
     <div className="group bg-white rounded-xl border border-[#E3E6ED] overflow-hidden flex flex-col hover:border-[#12347E]/50 hover:shadow-lg transition-all duration-200">
       <div className="relative aspect-16/10 overflow-hidden bg-gray-100">
         <img
-          src={category.cardImage}
+          src={asset(category.cardImage)}
           alt={category.name}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
           referrerPolicy="no-referrer"

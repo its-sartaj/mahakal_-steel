@@ -1,3 +1,4 @@
+import { asset } from '../utils/assets';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
@@ -8,7 +9,7 @@ interface ProductCardProps {
 }
 
 export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
-  const primaryImage = product.images[0] || '/assets/images/steel_sheets_plates_1793271793920.jpg';
+  const primaryImage = asset(product.images[0] || '/assets/images/steel_sheets_plates_1793271793920.jpg');
 
   return (
     <div className="group bg-white rounded-xl border border-[#E3E6ED] overflow-hidden flex flex-col hover:border-[#12347E]/40 hover:shadow-md transition-all duration-200">

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, ChevronRight } from 'lucide-react';
 import { COMPANY_INFO, PRODUCT_CATEGORIES } from '../data/steelData';
+import { asset } from '../utils/assets';
 
 export const Footer: React.FC = () => {
   return (
@@ -14,7 +15,7 @@ export const Footer: React.FC = () => {
             <Link to="/" className="inline-block group">
               <div className="bg-white rounded-xl px-3 py-2 inline-flex items-center shadow-md border border-white/20 transition-transform duration-200 group-hover:scale-[1.02]">
                 <img
-                  src="/assets/logo.png"
+                  src={asset('/assets/logo.png')}
                   alt="Mahakal Steel"
                   className="h-10 sm:h-12 w-auto object-contain"
                 />

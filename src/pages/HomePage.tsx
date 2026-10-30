@@ -1,3 +1,4 @@
+import { asset } from '../utils/assets';
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import {
@@ -32,7 +33,7 @@ interface HeroSlide {
 const HERO_SLIDES: HeroSlide[] = [
   {
     id: 1,
-    image: '/assets/images/hero_steel_warehouse_1793271819088.jpg',
+    image: asset(asset('/assets/images/hero_steel_warehouse_1793271819088.jpg')),
     kicker: 'Welcome To Mahakal Steel',
     headline: 'Top Steel Sheets & Plates Supplier In India',
     buttonText: 'Sheets & Plates',
@@ -40,7 +41,7 @@ const HERO_SLIDES: HeroSlide[] = [
   },
   {
     id: 2,
-    image: '/assets/images/steel_pipes_tubes_1793271794975.jpg',
+    image: asset(asset('/assets/images/steel_pipes_tubes_1793271794975.jpg')),
     kicker: 'Welcome To Mahakal Steel',
     headline: 'Leading Pipes & Tubes Distributor In Mumbai',
     buttonText: 'Pipes & Tubes',
@@ -48,7 +49,7 @@ const HERO_SLIDES: HeroSlide[] = [
   },
   {
     id: 3,
-    image: '/assets/images/structural_steel_beams_1793271796654.jpg',
+    image: asset(asset('/assets/images/structural_steel_beams_1793271796654.jpg')),
     kicker: 'Welcome To Mahakal Steel',
     headline: 'Premium Structural Beams & Heavy Sections',
     buttonText: 'Structural Steel',
@@ -56,7 +57,7 @@ const HERO_SLIDES: HeroSlide[] = [
   },
   {
     id: 4,
-    image: '/assets/images/stainless_steel_coils_1793271795436.jpg',
+    image: asset(asset('/assets/images/stainless_steel_coils_1793271795436.jpg')),
     kicker: 'Welcome To Mahakal Steel',
     headline: 'We Are A Leading Stainless Steel Supplier',
     buttonText: 'Stainless Steel',
@@ -263,12 +264,12 @@ export const HomePage: React.FC = () => {
 
   const getIndustryImage = (index: number) => {
     const images = [
-      '/assets/images/structural_steel_beams_1793271796654.jpg',
-      '/assets/images/steel_pipes_tubes_1793271794975.jpg',
-      '/assets/images/hero_steel_warehouse_1793271819088.jpg',
-      '/assets/images/steel_sheets_plates_1793271793920.jpg',
-      '/assets/images/mild_steel_bars_1793271818875.jpg',
-      '/assets/images/stainless_steel_coils_1793271795436.jpg'
+      asset('/assets/images/structural_steel_beams_1793271796654.jpg'),
+      asset('/assets/images/steel_pipes_tubes_1793271794975.jpg'),
+      asset('/assets/images/hero_steel_warehouse_1793271819088.jpg'),
+      asset('/assets/images/steel_sheets_plates_1793271793920.jpg'),
+      asset('/assets/images/mild_steel_bars_1793271818875.jpg'),
+      asset('/assets/images/stainless_steel_coils_1793271795436.jpg')
     ];
     return images[index % images.length];
   };
@@ -394,7 +395,7 @@ export const HomePage: React.FC = () => {
           <div className="lg:col-span-5 animate-fade-in-up-delay-1">
             <div className="group rounded-xl overflow-hidden shadow-xl border-4 border-white bg-gray-100">
               <img
-                src="/assets/images/steel_pipes_tubes_1793271794975.jpg"
+                src={asset("/assets/images/steel_pipes_tubes_1793271794975.jpg")}
                 alt="Mahakal Steel Pipes & Stockyard Inventory"
                 className="w-full h-[400px] sm:h-[480px] object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
@@ -639,13 +640,13 @@ export const HomePage: React.FC = () => {
         {/* Background Image: Factory Warehouse Steel Pipes (Vecteezy 69703789) */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <img
-            src="/assets/achievements-pipes-bg.jpg"
+            src={asset("/assets/achievements-pipes-bg.jpg")}
             alt="Mahakal Steel Factory Warehouse Industrial Pipes"
             className="w-full h-full object-cover scale-105"
             style={{ filter: 'brightness(0.68) contrast(1.15)' }}
             onError={(e) => {
               // Direct fallback to AI Studio path if needed
-              (e.target as HTMLImageElement).src = '/assets/industrial-pipes-stock.jpg';
+              (e.target as HTMLImageElement).src = asset('/assets/industrial-pipes-stock.jpg');
             }}
           />
           {/* Deep Navy Industrial Overlay */}

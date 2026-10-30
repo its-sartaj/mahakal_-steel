@@ -1,3 +1,4 @@
+import { asset } from '../utils/assets';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Images, ArrowRight, CheckCircle2, Eye, ShieldCheck, MapPin } from 'lucide-react';
@@ -18,7 +19,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Industrial Steel Pipe Stacks & Storage Yard',
     category: 'pipes',
     categoryLabel: 'Pipes & Tubes',
-    image: '/assets/achievements-pipes-bg.jpg',
+    image: asset('/assets/achievements-pipes-bg.jpg'),
     description: 'Precision stacked seamless carbon steel tubes and industrial hollow sections ready for transport dispatch.'
   },
   {
@@ -26,7 +27,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Sakinaka Central Steel Stockyard & Warehouse',
     category: 'stockyard',
     categoryLabel: 'Stockyard & Facility',
-    image: '/assets/images/hero_steel_warehouse_1793271819088.jpg',
+    image: asset('/assets/images/hero_steel_warehouse_1793271819088.jpg'),
     description: 'Equipped with overhead gantry cranes, heavy bundle racking, and certified weighbridge facilities.'
   },
   {
@@ -34,7 +35,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Hot Rolled & Cold Rolled Steel Plates',
     category: 'plates',
     categoryLabel: 'Plates & Sheets',
-    image: '/assets/images/steel_sheets_plates_1793271793920.jpg',
+    image: asset('/assets/images/steel_sheets_plates_1793271793920.jpg'),
     description: 'High-tensile MS plates, CR sheets, and chequered plates stacked in clean warehouse bays.'
   },
   {
@@ -42,7 +43,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Seamless Tubes & ERW Hollow Sections',
     category: 'pipes',
     categoryLabel: 'Pipes & Tubes',
-    image: '/assets/images/steel_pipes_tubes_1793271794975.jpg',
+    image: asset('/assets/images/steel_pipes_tubes_1793271794975.jpg'),
     description: 'Heavy gauge seamless pipes for high-pressure boilers, piping networks, and structural frames.'
   },
   {
@@ -50,7 +51,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Mild Steel Bright Bars, Angles & Channels',
     category: 'structural',
     categoryLabel: 'Structural & Bars',
-    image: '/assets/images/mild_steel_bars_1793271818875.jpg',
+    image: asset('/assets/images/mild_steel_bars_1793271818875.jpg'),
     description: 'Prime MS equal angles, channels (ISMC), flats, and square bars organized by dimension and specification.'
   },
   {
@@ -58,7 +59,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Stainless Steel Coils & Slit Strips',
     category: 'plates',
     categoryLabel: 'Stainless Steel',
-    image: '/assets/images/stainless_steel_coils_1793271795436.jpg',
+    image: asset('/assets/images/stainless_steel_coils_1793271795436.jpg'),
     description: 'Grade 304 & 316 stainless steel coils and mirror-finish decorative stainless sheets.'
   },
   {
@@ -66,7 +67,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Heavy Structural Steel I-Beams & Columns',
     category: 'structural',
     categoryLabel: 'Structural & Bars',
-    image: '/assets/images/structural_steel_beams_1793271796654.jpg',
+    image: asset('/assets/images/structural_steel_beams_1793271796654.jpg'),
     description: 'Heavy ISMB girders and universal columns for commercial engineering, bridges, and shed fabrication.'
   },
   {
@@ -74,7 +75,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Precision Factory Pipes & Hydraulic Cylinders',
     category: 'pipes',
     categoryLabel: 'Pipes & Tubes',
-    image: '/assets/industrial-pipes-stock.jpg',
+    image: asset('/assets/industrial-pipes-stock.jpg'),
     description: 'Close-tolerance honed tubes and structural piping stored under weather-protected covers.'
   },
   {
@@ -82,7 +83,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Official Mahakal Steel Sakinaka Facility & GST Signboard',
     category: 'stockyard',
     categoryLabel: 'Stockyard & Facility',
-    image: '/assets/mahakal-signboard.jpeg',
+    image: asset('/assets/mahakal-signboard.jpeg'),
     description: 'Official verified business board at Gala No. 10, Bunavad Market, Sakinaka, Mumbai. GSTIN: 27DLSPR1147D1ZU.'
   },
   {
@@ -90,7 +91,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Mahakal Steel 3D Metallic Brand Emblem & Identity',
     category: 'stockyard',
     categoryLabel: 'Stockyard & Facility',
-    image: '/assets/mahakal-banner.jpeg',
+    image: asset('/assets/mahakal-banner.jpeg'),
     description: 'Official metallic insignia embodying Quality, Strength & Industrial Trust across Maharashtra.'
   }
 ];

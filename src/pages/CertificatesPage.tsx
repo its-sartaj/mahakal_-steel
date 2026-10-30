@@ -1,3 +1,4 @@
+import { asset } from '../utils/assets';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Award, FileCheck2, CheckCircle2, Download, Eye, FileText, ArrowRight, ExternalLink } from 'lucide-react';
@@ -242,7 +243,7 @@ export const CertificatesPage: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-5 rounded-xl overflow-hidden border border-slate-200 bg-slate-900 shadow-sm">
             <img
-              src="/assets/mahakal-signboard.jpeg"
+              src={asset("/assets/mahakal-signboard.jpeg")}
               alt="Mahakal Steel Official GST Registration Signboard Gala No 10 Bunavad Market Sakinaka Mumbai GST 27DLSPR1147D1ZU"
               className="w-full h-auto object-cover hover:scale-102 transition-transform duration-300"
               loading="lazy"
