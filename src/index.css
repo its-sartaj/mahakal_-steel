@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-navy: #12347E;
+    --brand-navy-dark: #0B2252;
+    --brand-navy-light: #1D4ED8;
+    --brand-charcoal: #383A3F;
+    --brand-charcoal-dark: #222428;
+    --brand-light: #F5F6F8;
+    --brand-border: #E3E6ED;
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #383A3F;
+    background-color: #F5F6F8;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom scrollbar and steel details */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f2f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #c3c8d4;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #12347E;
+}
+
+/* Utility to hide scrollbar while preserving scroll behavior */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Super Smooth Bottom-to-Top Fade-In Animation ("niche se upar ki taraf super smooth") */
+@keyframes fadeInUpSuperSmooth {
+  0% {
+    opacity: 0;
+    transform: translateY(36px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  opacity: 0;
+  animation: fadeInUpSuperSmooth 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in-up-delay-1 {
+  opacity: 0;
+  animation: fadeInUpSuperSmooth 0.85s cubic-bezier(0.16, 1, 0.3, 1) 120ms forwards;
+}
+
+.animate-fade-in-up-delay-2 {
+  opacity: 0;
+  animation: fadeInUpSuperSmooth 0.85s cubic-bezier(0.16, 1, 0.3, 1) 240ms forwards;
+}
+
+.animate-fade-in-up-delay-3 {
+  opacity: 0;
+  animation: fadeInUpSuperSmooth 0.85s cubic-bezier(0.16, 1, 0.3, 1) 360ms forwards;
+}
+
+.animate-fade-in-up-delay-4 {
+  opacity: 0;
+  animation: fadeInUpSuperSmooth 0.85s cubic-bezier(0.16, 1, 0.3, 1) 480ms forwards;
+}
+
+.page-enter-smooth {
+  animation: fadeInUpSuperSmooth 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Universal Scroll Reveal: words, images, cards glide up smoothly from bottom on scroll */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-reveal-left {
+  opacity: 0;
+  transform: translateX(-30px) translateY(20px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.scroll-reveal-left.is-visible {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+
+.scroll-reveal-right {
+  opacity: 0;
+  transform: translateX(30px) translateY(20px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.scroll-reveal-right.is-visible {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+
+.scroll-delay-100 { transition-delay: 100ms; }
+.scroll-delay-200 { transition-delay: 200ms; }
+.scroll-delay-300 { transition-delay: 300ms; }
+.scroll-delay-400 { transition-delay: 400ms; }
+.scroll-delay-500 { transition-delay: 500ms; }
+
+
+
