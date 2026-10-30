@@ -29,7 +29,7 @@ import { NotFoundPage } from './pages/NotFoundPage';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <ScrollToTop />
       <ScrollRevealManager />
       <div className="min-h-screen flex flex-col bg-[#F5F6F8] text-[#383A3F]">
